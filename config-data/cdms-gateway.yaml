@@ -33,6 +33,8 @@ spring:
         uri: lb://cdms-observaciones
         predicates:
         - Path=/api/v1/observaciones/upload
+        filters:
+        - AuthFilter
       - id: cdms-mantenimiento
         uri: lb://cdms-mantenimiento
         predicates:

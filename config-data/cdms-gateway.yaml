@@ -38,6 +38,6 @@ spring:
       - id: cdms-mantenimiento
         uri: lb://cdms-mantenimiento
         predicates:
-        - Path=/api/v1/mantenimiento/**, /api/v1/accesorios/**, /api/v1/inventario-repuestos/**, /api/v1/documentos-anexos/**
+        - Path=/api/v1/mantenimientos/**, /api/v1/accesorios/**, /api/v1/inventario-repuestos/**, /api/v1/documentos-anexos/**
         filters:
           - AuthFilter

@@ -6,6 +6,8 @@ spring:
     name: cdms-eureka-server
 
 eureka:
+  instance:
+    hostname: ${DOCKER_HOST:localhost}
   client:
     fetch-registry: false
     register-with-eureka: false

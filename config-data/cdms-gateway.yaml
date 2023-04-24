@@ -6,13 +6,13 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      default-zone: http://localhos:8761/eureka
+      default-zone: cdms-eureka-server:8761/eureka
     instance:
       hostname: localhost
 
 spring:
   application:
-    name: cdms-gateway
+    name: cdms-gateway-server
   cloud:
     gateway:
       discovery:

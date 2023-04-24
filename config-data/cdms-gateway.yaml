@@ -18,6 +18,7 @@ spring:
       discovery:
         locator:
           enabled: true
+          lower-case-service-id: true
       routes:
       - id: cdms-usuarios
         uri: lb://cdms-usuarios

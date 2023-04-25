@@ -4,8 +4,8 @@ eureka:
     register-with-eureka: true
     service-url:
       default-zone: http://cdms-eureka-server:8761/eureka
-    instance:
-      hostname: localhost
+    # instance:
+      # hostname: localhost
 
 server:
   port: 8080

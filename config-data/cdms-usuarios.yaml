@@ -12,5 +12,5 @@ eureka:
     service-url:
       default-zone: http://cdms-eureka-server:8761/eureka
     instance:
-      # preferIpAddress: true
-      instance-id: ${spring.application.name}:${spring.application.instance-id:${random.value}}
+      preferIpAddress: true
+      # instance-id: ${spring.application.name}:${spring.application.instance-id:${random.value}}

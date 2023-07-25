@@ -25,7 +25,7 @@ spring:
       - id: cdms-sensores
         uri: lb://cdms-sensores
         predicates:
-        - Path=/api/v1/sensores/**, /api/v1/unidad-medida/**, /api/v1/medicion-sensor/**
+        - Path=/api/v1/sensores/**, /api/v1/unidad-medida/**, /api/v1/medicion-sensor/**, /api/v1/sensor-estacion/**
         filters:
         - Authfilter
       - id: cdms-estaciones
@@ -45,4 +45,4 @@ spring:
         predicates:
         - Path=/api/v1/mantenimientos/**, /api/v1/accesorios/**, /api/v1/inventario-repuestos/**, /api/v1/documentos-anexos/**
         filters:
-          - AuthFilter
+        - AuthFilter

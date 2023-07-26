@@ -25,7 +25,7 @@ spring:
       - id: cdms-estaciones
         uri: lb://cdms-estaciones
         predicates:
-          - Path=/api/v1/estaciones/**, /api/v1/sensores/**, /api/v1/unidades-medida/**, /api/v1/calibraciones/**, /api/v1/mantenimientos/estacion/**, /api/v1/imagenes/**, /api/v1/ubicaciones-estacion/**, /api/v1/contactos-estacion/**
+          - Path=/api/v1/estaciones/**, /api/v1/sensores/**, /api/v1/unidades-medida/**, /api/v1/calibraciones/**, /api/v1/imagenes/**, /api/v1/ubicaciones-estacion/**, /api/v1/contactos-estacion/**
         filters:
           - name: AuthFilter
       - id: cdms-obervaciones

@@ -31,7 +31,7 @@ spring:
       - id: cdms-observaciones
         uri: lb://cdms-observaciones
         predicates:
-          - Path=/api/v1/observaciones/**, /api/v1/observaciones/upload, /api/v1/observaciones/resumen/**, /api/v1/observaciones/noaa/**, /api/v1/observaciones/variable/**, /api/v1/observaciones/verificar/**
+          - Path=/api/v1/observaciones/**, /api/v1/original/**, /api/v1/observaciones/upload, /api/v1/observaciones/resumen/**, /api/v1/observaciones/noaa/**, /api/v1/observaciones/variable/**, /api/v1/observaciones/verificar/**
         filters:
           - name: AuthFilter
       - id: cdms-mantenimiento
@@ -43,6 +43,6 @@ spring:
       - id: cdms-obs
         uri: lb://cdms-obs
         predicates:
-          - Path=/api/v1/resumen/**, /api/v1/original/**
+          - Path=/api/v1/resumen/**
         filters:
           - name: AuthFilter
